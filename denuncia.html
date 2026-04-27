@@ -24,10 +24,17 @@
       </li>
     </ul>
 
-    <div class="search-user">
-      <input type="text" placeholder="Buscar locais, bairros...">
-      <button class="btn-user">Entrar/Criar conta</button>
+<div class="user-menu">
+
+    <button class="btn-user-icon" onclick="toggleMenu()">
+        <img src="Img/vector.png" alt="Usuário">
+    </button>
+
+    <div class="dropdown-user" id="dropdownUser">
+        <button onclick="logoutUser()">Sair</button>
     </div>
+
+</div>
   </nav>
 </header>
 

@@ -108,14 +108,72 @@ nav {
     font-size: 12px;
 }
 
-.btn-user {
-    background: transparent;
+.user-menu{
+    position: relative;
+}
+
+/* botão redondo */
+.btn-user-icon{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
     border: 1px solid rgba(255,255,255,.35);
-    color: white;
-    border-radius: 20px;
-    padding: 6px 15px;
-    font-size: 12px;
+    background: transparent;
     cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    transition: 0.3s;
+}
+
+.btn-user-icon:hover{
+    background: rgba(255,255,255,.08);
+}
+
+/* imagem png */
+.btn-user-icon img{
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+/* balão dropdown */
+.dropdown-user{
+    position: absolute;
+    top: 52px;
+    right: 0;
+
+    min-width: 130px;
+    padding: 8px;
+
+    background: #111;
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 12px;
+
+    display: none;
+    z-index: 999;
+}
+
+/* botão sair */
+.dropdown-user button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+
+    background: transparent;
+    color: white;
+    cursor: pointer;
+
+    font-family: 'Alexandria', sans-serif;
+    font-size: 14px;
+}
+
+.dropdown-user button:hover{
+    background: rgba(255,255,255,.08);
 }
 
 /*  MAIN   */
